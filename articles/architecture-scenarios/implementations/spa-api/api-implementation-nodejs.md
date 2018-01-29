@@ -242,6 +242,6 @@ app.get('/timesheets', checkJwt, jwtAuthz(['read:timesheets']), function(req, re
   // Save the timesheet to the database...
 
   //send the response
-  res.status(201).send(timesheet);
+  res.status(200).send(timesheet);
 });
 ```
